@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url(GilroyRegular.ttf) format("ttf"),
+    url(GilroyRegular.woff) format("woff"),
+    url(GilroyRegular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url(GilroyBold.ttf) format("ttf"), 
+    url(GilroyBold.woff) format("woff"),
+    url(GilroyBold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Extra Bold";
+  src: url(gilroy-extrabold.ttf) format("ttf"),
+    url(gilroy-extrabold.woff) format("woff"),
+    url(gilroy-extrabold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url(GilroyMedium.ttf) format("ttf"),
+    url(GilroyMedium.woff) format("woff"),
+    url(GilroyMedium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circe Regular";
+  src: url(CirceRegular.ttf) format("ttf"),
+    url(CirceRegular.woff) format("woff"),
+    url(CirceRegular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circe Bold";
+  src: url(CirceBold.ttf) format("ttf"), 
+    url(CirceBold.woff) format("woff"),
+    url(CirceBold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circe Extra Bold";
+  src: url(CirceExtraBold.ttf) format("ttf"),
+    url(CirceExtraBold.woff) format("woff"),
+    url(CirceExtraBold.woff2) format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url(proximanova_regular.ttf) format("ttf"),
+    url(proximanova_regular.woff) format("woff"),
+    url(proximanova_regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
