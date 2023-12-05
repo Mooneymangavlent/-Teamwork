@@ -26,7 +26,6 @@ fieldset {
   margin: 0;
   padding: 0;
 }
-
 ul,
 ol {
   list-style: none;
@@ -35,7 +34,15 @@ img {
   width: 100%;
 }
 
-
 .project__list {
  background-color:green;
 }
+
+.alexandr {
+  background-color: red;
+}
+
+body {
+  background-color: black;
+}
+
