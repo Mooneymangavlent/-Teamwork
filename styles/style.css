@@ -35,7 +35,7 @@ img {
 }
 
 .project__list {
- background-color:green;
+  background-color: green;
 }
 
 .alexandr {
@@ -46,3 +46,8 @@ body {
   background-color: black;
 }
 
+.ivan {
+  background-color: aqua;
+  max-width: 100px;
+  max-height: 100px;
+}
