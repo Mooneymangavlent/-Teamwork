@@ -26,7 +26,6 @@ fieldset {
   margin: 0;
   padding: 0;
 }
-
 ul,
 ol {
   list-style: none;
@@ -34,3 +33,12 @@ ol {
 img {
   width: 100%;
 }
+
+.alexandr {
+  background-color: red;
+}
+
+body {
+  background-color: black;
+}
+
