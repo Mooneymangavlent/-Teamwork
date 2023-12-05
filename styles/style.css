@@ -34,6 +34,10 @@ img {
   width: 100%;
 }
 
+.project__list {
+ background-color:green;
+}
+
 .alexandr {
   background-color: red;
 }
