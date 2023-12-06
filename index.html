@@ -10,10 +10,156 @@
 
   <body class="page">
     <header class="header">
-      headder danil
+      <div class="header__info">
+        <div class="headder__logo">
+          <a href="#0" class="header__logo-link">
+            <img
+              class="header__logo-image"
+              src="./images/header/header-logo-image.svg"
+              alt="Логотип компании в виде зеленой птички"
+            />
+          </a>
+        </div>
+        <form class="header__form">
+          <input class="header__form-input" type="text" placeholder="Найти" />
+        </form>
+        <button class="header__button" type="submit">Обратный звонок</button>
+        <address class="header__address">
+          <div class="header__address-flex-item">
+            <p class="header__address-text">Москва, пр-кт Андропова, д. 22</p>
+            <p class="header__address-text">
+              14 этаж, офис 1407 (м.Коломенская)
+            </p>
+          </div>
+          <div class="headder__address-flex-item">
+            <a class="header__adddress-phone" href="+7 499 938 84 48"
+              >+7 (499) 938-84-48</a
+            >
+            <p class="headder__form-working-hours">
+              Работаем в будни с 9:00 до 19:00
+            </p>
+          </div>
+        </address>
+      </div>
+      <div class="header__menu">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a href="#0" class="header__link">Главная</a>
+            </li>
+            <li class="header__list-item">
+              <label>
+                <select class="header__select" name="" id="">
+                  <option>О нас</option>
+                  <option value="">О компании</option>
+                  <option value="">Наша команда</option>
+                  <option value="">Сми о нас</option>
+                  <option value="">Отзывы</option>
+                  <option value="">Оплата</option>
+                </select>
+              </label>
+            </li>
+            <li class="header__list-item">
+              <label>
+                <select class="header__select" name="" id="">
+                  <option>Услуги</option>
+                  <option value="">О компании</option>
+                  <option value="">Наша команда</option>
+                  <option value="">Сми о нас</option>
+                  <option value="">Отзывы</option>
+                  <option value="">Оплата</option>
+                </select>
+              </label>
+            </li>
+            <li class="header__list-item">
+              <a href="#0" class="header__link">Арбит. Упр.</a>
+            </li>
+            <li class="header__list-item">
+              <label>
+                <select class="header__select select__big" name="" id="">
+                  <option>Выигранные дела</option>
+                  <option value="">О компании</option>
+                  <option value="">Наша команда</option>
+                  <option value="">Сми о нас</option>
+                  <option value="">Отзывы</option>
+                  <option value="">Оплата</option>
+                </select>
+              </label>
+            </li>
+            <li href="#0" class="header__list-item">
+              <a class="header__link" href="#0">Важно знать</a>
+            </li>
+            <li href="#0" class="header__list-item">
+              <a class="header__link" href="#0">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="hero">section danil</section>
+      <section class="hero">
+        <div class="hero__wrapper">
+          <div class="hero__text-content">
+            <p class="hero__subtitle">Законно спишем ваши долги!</p>
+            <h1 class="hero__title">Банкротство юридических лиц</h1>
+          </div>
+          <div class="form__wrapper">
+            <p class="form__titile">
+              Оставьте заявку сегодня и получите первый месяц
+              <span class="form__accent-span">БЕСПЛАТНО!</span>
+            </p>
+            <form action="" class="hero__form">
+              <select class="hero__select" name="" id="">
+                <option value="">Долг до 300 тыс. руб.</option>
+                <option value="">Долг до 200 тыс. руб.</option>
+                <option value="">Долг до 100 тыс. руб.</option>
+                <option value="">Долг до 50 тыс. руб.</option>
+              </select>
+              <input
+                class="hero__input"
+                type="tel"
+                placeholder="+7 (999) 999-99-99"
+              />
+              <button class="hero__button" type="submit">
+                Оставить заявку
+              </button>
+            </form>
+            <p class="form__subtitle">
+              Нажимая на кнопку вы соглашаетесь с Политикой конфиденциальности
+            </p>
+          </div>
+        </div>
+        <div class="hero__consults">
+          <div class="hero__consults-item">
+            <p class="hero__consults-description">Консультация бесплатно</p>
+            <img
+              class="hero__consults-image"
+              src="./images/hero/man-icon.png"
+              alt=""
+            />
+          </div>
+          <div class="hero__consults-item">
+            <p class="hero__consults-description">
+              Гарантия списания долга
+            </p>
+            <img
+              class="hero__consults-image"
+              src="./images/hero/document-icon.png"
+              alt=""
+            />
+          </div>
+          <div class="hero__consults-item">
+            <p class="hero__consults-description">
+              Защита от коллекторов
+            </p>
+            <img
+              class="hero__consults-image"
+              src="./images/hero/security-icon.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
       <section class="services">section danil</section>
       <section class="application"></section>
       <section class="video__project"></section>
