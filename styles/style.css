@@ -197,3 +197,33 @@ img {
 .title-down{
   padding-top: 24px;
 }
+.footer_logo{
+width: 32px;
+height: 32px;
+}
+.footer-logo-left{
+width: 104.54px;
+height: 40px;
+}
+.footer{
+display: flex;
+justify-content: space-between;
+padding: 40px 268px;
+align-items: center;
+gap: 80px;
+align-items: stretch;
+background-color: #121212;
+}
+.footersocial-list-item{
+  display: flex;
+  gap: 24px;
+}
+.footer-click{
+  text-decoration: none;
+  color: var(--gray-gray-7, #8C8C8C);
+
+/* p/16px */
+font-family: "Gilroy Regular", sans-serif;
+font-size: 16px;
+line-height: 130%; /* 20.8px */
+}
