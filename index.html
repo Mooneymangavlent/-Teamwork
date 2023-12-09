@@ -301,42 +301,42 @@
         </div>
         <div class="project__slider">
           <div class="project__list_slides">
-            <input type="radio" name="r" id="r1" checked>
-            <input type="radio" name="r" id="r2">
-            <div class="project__list_review s1">
+            <input type="radio" name="t" id="t1" checked>
+            <input type="radio" name="t" id="t2">
+            <div class="project__list_review y1">
               <div class="project__list_review-title">
                 <img src="images/Rectangle 48.png" alt="photo" class="project__list_photo-img">
                 <h2 class="project__list_review_title-item">Галина Ч.</h2>
               </div>
               <p class="project__list_review-text">«Хочу выразить признательность кампании "Банкротпроект". Это была моя последняя надежда на тот момент. Набрала кредитов на реабилитацию сына. Брала то в одном банке, то в другом, то рефинансирование. В конце концов мне уже не хватало зарплаты, чтобы платить кредиты и хоть как-то существовать. Обратилась к специалистам Банкротпроект, оформила доверенность и всё. Все остальные документы они собрали сами, передали дело в суд. И вот на днях позвонили, сказали процедура завершена и я могу разблокировать карточки. От себя могу добавить ещё, что люди там работают замечательные, отзывчивые. Спасибо вам огромное.»</p>
             </div>
-            <div class="project__list_review s2">
+            <div class="project__list_review y2">
               <div class="project__list_review-title">
                 <img src="images/default_user_image.png" alt="photo" class="project__list_photo-img">
                 <h2 class="project__list_review_title-item">Василий Г.</h2>
               </div>
               <p class="project__list_review-text">«Обратилась к специалистам Банкротпроект, оформила доверенность и всё. Все остальные документы они собрали сами, передали дело в суд. И вот на днях позвонили, сказали процедура завершена и я могу разблокировать карточки. От себя могу добавить ещё, что люди там работают замечательные, отзывчивые. Спасибо вам огромное.»</p>
             </div>
-            <div class="slider__navigation" id="controls">
-              <label for="r1" class="slider__navigation-bar"></label>
-              <label for="r2" class="slider__navigation-bar"></label>
+            <div class="slider__navigation2" id="controls">
+              <label for="t1" class="slider__navigation-bar"></label>
+              <label for="t2" class="slider__navigation-bar"></label>
             </div>
           </div>
         </div>
         <script>
-          const r1 = document.getElementById('r1');
-          const r2 = document.getElementById('r2');
-          const s1 = document.querySelector('.s1');
-          const s2 = document.querySelector('.s2');
+          const t1 = document.getElementById('t1');
+          const t2 = document.getElementById('t2');
+          const y1 = document.querySelector('.y1');
+          const y2 = document.querySelector('.y2');
         
-          r1.addEventListener('click', function () {
-            s1.style.display = 'block';
-            s2.style.display = 'none';
+          t1.addEventListener('click', function () {
+            y1.style.display = 'block';
+            y2.style.display = 'none';
           });
         
-          r2.addEventListener('click', function () {
-            s1.style.display = 'none';
-            s2.style.display = 'block';
+          t2.addEventListener('click', function () {
+            y1.style.display = 'none';
+            y2.style.display = 'block';
           });
         </script>
         </div>

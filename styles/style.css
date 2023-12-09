@@ -307,6 +307,128 @@ img {
   grid-row-gap: 39px;
 }
 
+.project__list_rating {
+  display: flex;
+  grid-column-gap: 41px;
+}
+
+.project__list_rating-img {
+  width: 87px;
+  height: 52px;
+  margin-bottom: 2px;
+}
+
+.project__list_numbers-img {
+  width: 109px;
+  height: 58px;
+  margin-top: 2px;
+}
+
+.project__list_photo-img {
+  width: 75px;
+  height: 75px;
+  margin-left:48px;
+  margin-top: 33px;
+}
+
+.project__list_button {
+  color: #FFFFFF;
+  background-color: #3321BC;
+  width: 411px;
+  height: 63px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Gilroy Regular", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0em;
+  cursor: pointer;
+  border: none;
+}
+
+.project__list_review-title {
+  display: flex;
+}
+
+.project__list_review {
+  height: 371px;
+}
+
+.project__list_review_title-item {
+  font-size: 80px;
+  padding-left: 39px;
+  padding-top: 24px;
+}
+
+.project__list_review-text {
+  color: #8C8C8C;
+  font-family: "Gilroy Medium", sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0em;
+  padding-left: 162px;
+  padding-top: 18px;
+  max-width: 1280px;
+}
+
+.project__list_button:hover,
+.project__list_button:focus {
+  outline: 5px solid rgb(109, 109, 255);
+  cursor: pointer;
+}
+.y2 {
+  display: none;
+}
+
+.project__slider {
+  background-color: #1B1B1B;
+  border-radius: 8px;
+  grid-column: 1/3;
+  height: 371px;
+}
+
+.slider__navigation2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+/* .slider__navigation-bar {
+  height: 8px;
+  width: 30px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #ddd;
+  opacity: 0.5;
+  border-radius: 10px;
+  transition: all .4s ease;
+} */
+
+.slider__navigation-bar:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+input[name="t"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+#t1:checked ~ #controls label:nth-child(2), 
+#t2:checked ~ #controls label:nth-child(1) {
+  background: url('/images/Frame\ 360.png') no-repeat;
+  position: absolute;
+  bottom: 158px;
+  left: 635px;
+  height: 50px;
+  width: 50px;
+}
+
+#t2:checked ~ #controls label:nth-child(1) {
+  background: url('/images/Frame\ 362.png') no-repeat;
+}
+
 .search-form-__textfield:focus-visible {
   outline: 1px solid yellowgreen;
   outline-offset: 5px;
@@ -1019,85 +1141,6 @@ background-color: #121212;
   overflow: hidden;
 }
 
-.project__list_rating {
-  display: flex;
-  grid-column-gap: 41px;
-}
-
-.project__list_rating-img {
-  width: 87px;
-  height: 52px;
-  margin-bottom: 2px;
-}
-
-.project__list_numbers-img {
-  width: 109px;
-  height: 58px;
-  margin-top: 2px;
-}
-
-.project__list_photo-img {
-  width: 75px;
-  height: 75px;
-  margin-left:48px;
-  margin-top: 33px;
-}
-
-.project__list_button {
-  color: #FFFFFF;
-  background-color: #3321BC;
-  width: 411px;
-  height: 63px;
-  border-radius: 8px;
-  text-align: center;
-  font-family: "Gilroy Regular", sans-serif;
-  font-size: 24px;
-  letter-spacing: 0em;
-  cursor: pointer;
-  border: none;
-}
-
-.project__list_review-title {
-  display: flex;
-}
-
-.project__list_review {
-  height: 371px;
-}
-
-.project__list_review_title-item {
-  font-size: 80px;
-  padding-left: 39px;
-  padding-top: 24px;
-}
-
-.project__list_review-text {
-  color: #8C8C8C;
-  font-family: "Gilroy Medium", sans-serif;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0em;
-  padding-left: 162px;
-  padding-top: 18px;
-  max-width: 1280px;
-}
-
-.project__list_button:hover,
-.project__list_button:focus {
-  outline: 5px solid rgb(109, 109, 255);
-  cursor: pointer;
-}
-.s2 {
-  display: none;
-}
-
-.project__slider {
-  background-color: #1B1B1B;
-  border-radius: 8px;
-  grid-column: 1/3;
-  height: 371px;
-}
-
 .slider__navigation {
   position: absolute;
   bottom: 16px;
@@ -1679,18 +1722,5 @@ background-color: #121212;
   color: var(--gray-gray-7, #8C8C8C);
   font-family: "Gilroy Regular", sans-serif;
   font-size: 16px;
-  line-height: 130%; /* 20.8px */}
-
-#r1:checked ~ #controls label:nth-child(2), 
-#r2:checked ~ #controls label:nth-child(1) {
-  background: url('/Teamwork/images/Frame\ 360.png') no-repeat;
-  position: absolute;
-  bottom: 158px;
-  left: 635px;
-  height: 50px;
-  width: 50px;
-}
-
-#r2:checked ~ #controls label:nth-child(1) {
-  background: url('/Teamwork/images/Frame\ 362.png') no-repeat;
+  line-height: 130%; /* 20.8px */
 }
