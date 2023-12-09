@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-
   <body class="page">
     <header class="header">
       <div class="header__info">
@@ -234,6 +233,113 @@
               </div>
             </div>
          </div>
+      </section>
+      <section class="application">
+        <form action="#" method="post" class="form">
+          <h2 class="form__title">
+          Остались вопросы?
+          </h2>
+          <p class="form__text">
+          Оставьте заявку на бесплатную консультацию!
+          </p>
+      <div class="form__input">
+          <label class="form__input_label" for="name">
+            <input type="text" class="form__input-item" value="" placeholder="Ваше имя" id="name"/>
+          </label>
+          <label class="form__input_label" for="tel">
+            <input type="tel" class="form__input-item" value="" placeholder="+7 (999) 999-99-99" id="tel"/>
+          </label>
+          <button class="form__button">Оставить заявку</button>
+      </div>
+      </section>
+      <section class="video__project">
+  <div id="video-container" class="video__project-item">
+    <img id="video-poster" src="images/Frame570.png" alt="Постер видео">
+    <iframe id="video-iframe" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="video__project-text video__project-text1">
+    <p class="video__project_text-item video__project_text-garant">Гарантия Результата</p>
+    <img src="images/Tilda_Icons_9ta_docs.png" alt="print" class="video__project-img video__project_img-garant">
+  </div>
+  <div class="video__project-text video__project-text2">
+    <p class="video__project_text-control">Свои арбитражные управляющие</p>
+    <img src="images/Tilda_Icons_1ed_hat.png" alt="hat" class="video__project-img video__project_img-control">
+  </div>
+  <div class="video__project-text video__project-text3">
+    <p class="video__project_text-item video__project_text-deadlines">Строгое соблюдение сроков</p>
+    <img src="images/Tilda_Icons_1ed_timer.png" alt="timer" class="video__project-img video__project_img_timer-treaty">
+  </div>
+  <div class="video__project-text video__project-text4">
+    <p class="video__project_text-item video__project_text-experience">Опыт работы более 10 лет</p>
+    <img src="images/Tilda_Icons_21re_treaty.png" alt="treaty" class="video__project-img video__project_img_timer-treaty">
+  </div>
+  <div class="video__project-text video__project-text5">
+    <p class="video__project_text-item video__project_text-best">Лучшие цены на рынке</p>
+    <img src="images/Tilda_Icons_8yo_flame.png" alt="flame" class="video__project-img">
+  </div>
+  <script>
+    var videoPoster = document.getElementById('video-poster');
+    var videoIframe = document.getElementById('video-iframe');
+  
+    videoPoster.addEventListener('click', function() {
+      videoPoster.style.display = 'none';
+      videoIframe.src = 'https://www.youtube.com/embed/RhlQvbvMg-0?autoplay=1';
+      videoIframe.style.display = 'block';
+    });
+  </script>
+      </section> 
+      <section class="project__list">
+        <div class="project__list_title">
+          <p>Отзывы о компании «БанкротПроект»</p>
+        </div>
+        <div class="project__list_rating">
+          <div class="project__list_container-img">
+            <img src="images/5.0.png" alt="rating" class="project__list_rating-img">
+            <img src="images/Frame 572.png" alt="number of ratings" class="project__list_numbers-img">
+          </div>
+          <button class="project__list_button" onclick="window.open('https://yandex.ru/maps/org/rosbankrot/132631023981/?ll=43.943659%2C56.314279&z=14.8')" target="_blank">Отзывы на Яндекс.Справочник</button>
+        </div>
+        <div class="project__slider">
+          <div class="project__list_slides">
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <div class="project__list_review s1">
+              <div class="project__list_review-title">
+                <img src="images/Rectangle 48.png" alt="photo" class="project__list_photo-img">
+                <h2 class="project__list_review_title-item">Галина Ч.</h2>
+              </div>
+              <p class="project__list_review-text">«Хочу выразить признательность кампании "Банкротпроект". Это была моя последняя надежда на тот момент. Набрала кредитов на реабилитацию сына. Брала то в одном банке, то в другом, то рефинансирование. В конце концов мне уже не хватало зарплаты, чтобы платить кредиты и хоть как-то существовать. Обратилась к специалистам Банкротпроект, оформила доверенность и всё. Все остальные документы они собрали сами, передали дело в суд. И вот на днях позвонили, сказали процедура завершена и я могу разблокировать карточки. От себя могу добавить ещё, что люди там работают замечательные, отзывчивые. Спасибо вам огромное.»</p>
+            </div>
+            <div class="project__list_review s2">
+              <div class="project__list_review-title">
+                <img src="images/default_user_image.png" alt="photo" class="project__list_photo-img">
+                <h2 class="project__list_review_title-item">Василий Г.</h2>
+              </div>
+              <p class="project__list_review-text">«Обратилась к специалистам Банкротпроект, оформила доверенность и всё. Все остальные документы они собрали сами, передали дело в суд. И вот на днях позвонили, сказали процедура завершена и я могу разблокировать карточки. От себя могу добавить ещё, что люди там работают замечательные, отзывчивые. Спасибо вам огромное.»</p>
+            </div>
+            <div class="slider__navigation" id="controls">
+              <label for="r1" class="slider__navigation-bar"></label>
+              <label for="r2" class="slider__navigation-bar"></label>
+            </div>
+          </div>
+        </div>
+        <script>
+          const r1 = document.getElementById('r1');
+          const r2 = document.getElementById('r2');
+          const s1 = document.querySelector('.s1');
+          const s2 = document.querySelector('.s2');
+        
+          r1.addEventListener('click', function () {
+            s1.style.display = 'block';
+            s2.style.display = 'none';
+          });
+        
+          r2.addEventListener('click', function () {
+            s1.style.display = 'none';
+            s2.style.display = 'block';
+          });
+        </script>
+        </div>
       </section>
       <section class="clients content-section">
             <article class="clients__image-block">
