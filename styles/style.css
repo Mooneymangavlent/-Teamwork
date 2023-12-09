@@ -32,23 +32,102 @@ ol {
 img {
   width: 100%;
 }
-
-.project__list {
-  background-color: green;
+.question__page {
+  padding: 80px 268px;
+  background-image: url(../images/wrapper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.question__title {
+  font-family: "Gilroy Regular", sans-serif;
+  font-size: 40px;
+  line-height: 120%; /* 48px */
+  color: var(--gray-gray-3, #f5f5f5);
+}
+.question__text {
+  font-family: "Gilroy Regular", sans-serif;
+  line-height: 130%; /* 31.2px */
+  font-size: 24px;
+  color: var(--gray-gray-7, #8c8c8c);
+  margin-bottom: 24px;
 }
 
-.alexandr {
-  background-color: red;
+.search-form-__textfield {
+  font-family: "Gilroy Regular", sans-serif;
+  font-size: 24px;
+  line-height: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--gray-gray-4, #f0f0f0);
+  background: var(--gray-gray-1, #fff);
+  padding: 16px;
+  cursor: pointer;
+  width: 320px;
+}
+.search-form-__numberfield {
+  font-family: "Gilroy Regular", sans-serif;
+  font-size: 24px;
+  line-height: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--gray-gray-4, #f0f0f0);
+  background: var(--gray-gray-1, #fff);
+  padding: 16px;
+  cursor: pointer;
+  width: 320px;
+}
+.nav__question-menu {
+  display: flex;
+  column-gap: 16px;
+}
+.question-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  width: 320px;
+  background: var(
+    --bg5,
+    linear-gradient(
+      220deg,
+      #7aca37 15.98%,
+      #70c53a 28.3%,
+      #56b641 48.98%,
+      #2c9f4e 75.34%,
+      #098c58 94.49%
+    )
+  );
+  cursor: pointer;
+}
+.text-button {
+  color: var(--gray-gray-1, #fff);
+  font-family: "Circe Regular", sans-serif;
+  font-size: 24px;
+  line-height: 32px; /* 133.333% */
+}
+.img-button {
+  width: 16px;
+  height: 16px;
+}
+.search-form-__textfield:focus {
+  outline: none;
 }
 
-body {
-  background-color: black;
+.search-form-__textfield:focus-visible {
+  outline: 1px solid yellowgreen;
+  outline-offset: 5px;
+}
+.search-form-__numberfield:focus {
+  outline: none;
+}
+.search-form-__numberfield:focus-visible {
+  outline: 1px solid yellowgreen;
+  outline-offset: 5px;
 }
 
-.ivan {
-  background-color: aqua;
-  max-width: 100px;
-  max-height: 100px;
+.question-button:focus-visible {
+  outline: 1px solid yellowgreen;
+  outline-offset: 5px;
 }
 
 /* ----------------HEADER STYLES START------------------------ */
@@ -472,3 +551,101 @@ body {
 }
 
 /* ----------------HERO STYLES END-------------------------- */
+.about {
+  background-image: url(../images/wrapper-down.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 268px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #121212;
+  gap: 40px;
+}
+.about__menu-nav:not(:last-child) {
+  padding-bottom: 10px;
+}
+.about__menu-link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 130%; /* 20.8px */
+  font-family: "Gilroy Regulat", sans-serif;
+  color: var(--gray-gray-1, #fff);
+}
+.about__title {
+  padding-bottom: 24px;
+  font-family: "Gilroy Medium";
+  color: var(--gray-gray-1, #fff);
+  font-size: 32px;
+  font-weight: 500;
+}
+.navigation {
+  width: 640px;
+  padding-left: 297px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+  flex: 1 0 0;
+}
+.title-right {
+  font-family: "Gilroy Medium", sans-serif;
+  line-height: 130%; /* 52px */
+  font-size: 40px;
+  color: var(--gray-gray-3, #f5f5f5);
+  text-align: right;
+}
+.title-right-low {
+  font-family: "Gilroy Medium", sans-serif;
+  line-height: 130%; /* 31.2px */
+  font-size: 24px;
+  color: var(--gray-gray-3, #f5f5f5);
+  text-align: right;
+  white-space: nowrap;
+}
+.text-right {
+  color: var(--gray-gray-7, #8c8c8c);
+  text-align: right;
+  font-family: "Circe Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px; /* 125% */
+}
+.one {
+  width: 279px;
+}
+.two {
+  width: 321px;
+}
+.title-down{
+  padding-top: 24px;
+}
+.footer_logo{
+width: 32px;
+height: 32px;
+}
+.footer-logo-left{
+width: 104.54px;
+height: 40px;
+}
+.footer{
+display: flex;
+justify-content: space-between;
+padding: 40px 268px;
+align-items: center;
+gap: 80px;
+align-items: stretch;
+background-color: #121212;
+}
+.footersocial-list-item{
+  display: flex;
+  gap: 24px;
+}
+.footer-click{
+  text-decoration: none;
+  color: var(--gray-gray-7, #8C8C8C);
+
+/* p/16px */
+font-family: "Gilroy Regular", sans-serif;
+font-size: 16px;
+line-height: 130%; /* 20.8px */
+}
