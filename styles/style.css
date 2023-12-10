@@ -123,10 +123,11 @@ img {
   background-color: #1B1B1B;
   display: flex;
   align-items: center;
-  background-image: url('images/background-bird.png');
+  background-image: url('/images/background-bird.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-top: 70px;
 }
 
 .form {
@@ -136,6 +137,7 @@ img {
 
 .form__title {
   font-family: "Gilroy Regular", sans-serif;
+  font-weight: 400;
   font-size: 40px;
   line-height: 10px;
   color:#F5F5F5;
@@ -150,7 +152,7 @@ img {
 
 .form__input {
   display: flex;
-  gap: 16px;
+  gap: 17px;
 }
 
 .form__input-item {
@@ -166,6 +168,7 @@ img {
 .form__button {
   font-family: "Circe Regular", sans-serif;
   font-size: 24px;
+  font-weight: 400;
   color: #FFFFFF;
   width: 320px;
   height: 64px;
@@ -357,14 +360,17 @@ img {
   font-size: 80px;
   padding-left: 39px;
   padding-top: 24px;
+  font-family: 'Gilroy Regular', sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  letter-spacing: 0em;
 }
 
 .project__list_review-text {
   color: #8C8C8C;
   font-family: "Gilroy Medium", sans-serif;
   font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0em;
+  font-weight: 500;
   padding-left: 162px;
   padding-top: 18px;
   max-width: 1280px;
