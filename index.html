@@ -1,12 +1,653 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teamwork</title>
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body class="page">
-</body>
-</html>
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__info">
+        <div class="headder__logo">
+          <a href="#0" class="header__logo-link">
+            <img
+              class="header__logo-image"
+              src="./images/header/header-logo-image.svg"
+              alt="Логотип компании в виде зеленой птички"
+            />
+          </a>
+        </div>
+        <form class="header__form">
+          <input class="header__form-input" type="text" placeholder="Найти" />
+        </form>
+        <button id="popup-btn" class="header__button" type="submit">Обратный звонок</button>
+         <div id="popup-window" class="popup-wrapper">
+          <div id="my-popup" class="popup">
+            <p class="popup__titile">
+              Обратный звонок
+              <svg class="close-popup" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M5.88061 4.99947L9.81526 1.07065C9.93286 0.953029 9.99893 0.793505 9.99893 0.62717C9.99893 0.460834 9.93286 0.301311 9.81526 0.183694C9.69766 0.0660767 9.53815 0 9.37183 0C9.20551 0 9.04601 0.0660767 8.9284 0.183694L5 4.11876L1.0716 0.183694C0.953993 0.0660767 0.794487 1.4768e-07 0.628169 1.4892e-07C0.461851 1.50159e-07 0.302345 0.0660767 0.18474 0.183694C0.0671355 0.301311 0.001066 0.460834 0.001066 0.62717C0.001066 0.793505 0.0671355 0.953029 0.18474 1.07065L4.11939 4.99947L0.18474 8.92829C0.126202 8.98635 0.0797396 9.05544 0.0480322 9.13155C0.0163247 9.20767 0 9.28931 0 9.37176C0 9.45422 0.0163247 9.53586 0.0480322 9.61198C0.0797396 9.68809 0.126202 9.75717 0.18474 9.81524C0.2428 9.87378 0.311875 9.92025 0.387982 9.95196C0.464089 9.98367 0.545721 10 0.628169 10C0.710616 10 0.792248 9.98367 0.868355 9.95196C0.944462 9.92025 1.01354 9.87378 1.0716 9.81524L5 5.88017L8.9284 9.81524C8.98646 9.87378 9.05554 9.92025 9.13165 9.95196C9.20775 9.98367 9.28938 10 9.37183 10C9.45428 10 9.53591 9.98367 9.61202 9.95196C9.68812 9.92025 9.7572 9.87378 9.81526 9.81524C9.8738 9.75717 9.92026 9.68809 9.95197 9.61198C9.98368 9.53586 10 9.45422 10 9.37176C10 9.28931 9.98368 9.20767 9.95197 9.13155C9.92026 9.05544 9.8738 8.98635 9.81526 8.92829L5.88061 4.99947Z" fill="white"/>
+              </svg>
+            </p>
+            <form action="" class="popup__form">
+             <input class="popup__input" placeholder="Ваше имя" type="text">
+              <input
+                class="popup__input"
+                type="tel"
+                placeholder="+7 (999) 999-99-99"
+              />
+              <button class="popup__button" type="submit">
+                Перезвоните мне!
+              </button>
+            </form>
+            <p class="form__subtitle">
+              Оставьте свой номер телефона. В течение 10 минут с вами свяжется наш менеджер и проконсультирует по всем вопросам. 
+            </p>
+          </div>
+     </div>
+        <address class="header__address">
+          <div class="header__address-flex-item">
+            <p class="header__address-text">Москва, пр-кт Андропова, д. 22</p>
+            <p class="header__address-text">
+              14 этаж, офис 1407 (м.Коломенская)
+            </p>
+          </div>
+          <div class="headder__address-flex-item">
+            <a class="header__adddress-phone" href="+7 499 938 84 48"
+              >+7 (499) 938-84-48</a
+            >
+            <p class="headder__form-working-hours">
+              Работаем в будни с 9:00 до 19:00
+            </p>
+          </div>
+        </address>
+        </div>
+      </div>
+      <div class="header__menu">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a href="#0" class="header__link">Главная</a>
+            </li>
+            <li class="header__list-item dropdown-menu">
+            <a href="#0" class="header__link">О нас</a>
+              <ul class="dropdown__list">
+                <li class="dropdown__list-item">
+                  <a href="#0" class="dropdown__list-link">О компании</a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="#0" class="dropdown__list-link">Наша команда</a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="#0" class="dropdown__list-link">Сми о нас</a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="#0" class="dropdown__list-link">Отзывы</a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="#0" class="dropdown__list-link">Оплата</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__list-item dropdown-menu">
+              <a href="#0" class="header__link">Услуги</a>
+              <ul class="dropdown__list">
+                <li class="dropdown__list-item">
+                  <a href="#0" class="dropdown__list-link">О компании</a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="#0" class="dropdown__list-link">Наша команда</a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="#0" class="dropdown__list-link">Сми о нас</a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="#0" class="dropdown__list-link">Отзывы</a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="#0" class="dropdown__list-link">Оплата</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__list-item">
+              <a href="#0" class="header__link">Арбит.Упр.</a>
+            </li>
+            <li class="header__list-item dropdown-menu">
+              <a href="#0" class="header__link">Выигранные дела</a>
+              <ul class="dropdown__list dropdown-list--position">
+                <li class="dropdown__list-item">
+                  <a href="#0" class="dropdown__list-link">О компании</a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="#0" class="dropdown__list-link">Наша команда</a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="#0" class="dropdown__list-link">Сми о нас</a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="#0" class="dropdown__list-link">Отзывы</a>
+                </li>
+                <li class="dropdown__list-item">
+                  <a href="#0" class="dropdown__list-link">Оплата</a>
+                </li>
+              </ul>
+            </li>
+            <li href="#0" class="header__list-item">
+              <a class="header__link" href="#0">Важно знать</a>
+            </li>
+            <li href="#0" class="header__list-item">
+              <a class="header__link" href="#0">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+      <section class="hero">
+        <div class="hero__wrapper">
+          <div class="hero__text-content">
+            <p class="hero__subtitle">Законно спишем ваши долги!</p>
+            <h1 class="hero__title">Банкротство юридических лиц</h1>
+          </div>
+          <div class="form__wrapper">
+            <p class="form__titile">
+              Оставьте заявку сегодня и получите первый месяц
+              <span class="form__accent-span">БЕСПЛАТНО!</span>
+            </p>
+            <form action="" class="hero__form">
+              <select class="hero__select" name="" id="">
+                <option value="">Долг до 300 тыс. руб.</option>
+                <option value="">Долг до 200 тыс. руб.</option>
+                <option value="">Долг до 100 тыс. руб.</option>
+                <option value="">Долг до 50 тыс. руб.</option>
+              </select>
+              <input
+                class="hero__input"
+                type="tel"
+                placeholder="+7 (999) 999-99-99"
+              />
+              <button class="hero__button" type="submit">
+                Оставить заявку
+              </button>
+            </form>
+            <p class="form__subtitle">
+              Нажимая на кнопку вы соглашаетесь с Политикой конфиденциальности
+            </p>
+          </div>
+        </div>
+        <div class="hero__consults">
+          <div class="hero__consults-item">
+            <p class="hero__consults-description">Консультация бесплатно</p>
+            <img
+              class="hero__consults-image"
+              src="./images/hero/man-icon.png"
+              alt=""
+            />
+          </div>
+          <div class="hero__consults-item">
+            <p class="hero__consults-description">Гарантия списания долга</p>
+            <img
+              class="hero__consults-image"
+              src="./images/hero/document-icon.png"
+              alt=""
+            />
+          </div>
+          <div class="hero__consults-item">
+            <p class="hero__consults-description">Защита от коллекторов</p>
+            <img
+              class="hero__consults-image"
+              src="./images/hero/security-icon.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="bankruptcy content-section">
+        <div class="bankruptcy__services">
+          <h3 class="bankruptcy__services__title">Предоставляем услуги по банкротству:</h3>
+          <div class="bankruptcy__btn-block">
+              <a class="bankruptcy__btn-individual" href="#">Для физических лиц</a>
+              <a class="bankruptcy__btn-entity" href="#">Для юридических лиц</a>
+          </div>
+        </div>
+        <div class="bankruptcy__slider">
+           <div class="slides-list">
+              <input type="radio" name="r" id="r1" checked>
+              <input type="radio" name="r" id="r2">
+              <input type="radio" name="r" id="r3">
+              <div class="slide s1">
+                <div class="slide__wrapper">
+                  <div class="slide__text-block">
+                      <h2 class="bankruptcy__title">Банкротство физических лиц</h2>
+                      <p class="bankruptcy__text">Если Вы оказались в сложной жизненной 
+                        ситуации и не справляетесь со своими кредитными обязательствами, 
+                        есть способ законно избавиться от долгов!</p>
+                      <a class="bankruptcy__btn" href="#">Подробнее об услуге</a>
+                  </div>
+                  <img class="bankruptcy__img" src="images/bankrot.png" alt="">
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__wrapper">
+                  <div class="slide__text-block">
+                      <h2 class="bankruptcy__title">Спишите долги бесплатно через МФЦ</h2>
+                      <p class="bankruptcy__text">Освободитесь от долгов и кредитов навсегда!
+                        · Квалифицированная помощь. Финансовая защита. Юридическое сопровождение</p>
+                      <a class="bankruptcy__btn" href="#">Подробнее об услуге</a>
+                  </div>
+                  <img class="bankruptcy__img" src="images/mfc.png" alt="">
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__wrapper">
+                  <div class="slide__text-block">
+                      <h2 class="bankruptcy__title">Цены на услуги по банкротству для физ. лиц</h2>
+                      <p class="bankruptcy__text">Честная и доступная цена на профессиональные 
+                        услуги по банкротству физических лиц.</p>
+                      <a class="bankruptcy__btn" href="#">Подробнее об услуге</a>
+                  </div>
+                  <img class="bankruptcy__img" src="images/cenat.png" alt="">
+                </div>
+              </div>
+              <div class="slider__navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+              </div>
+            </div>
+         </div>
+      </section>
+      <section class="application">
+        <form action="#" method="post" class="form">
+          <h2 class="form__title">
+          Остались вопросы?
+          </h2>
+          <p class="form__text">
+          Оставьте заявку на бесплатную консультацию!
+          </p>
+      <div class="form__input">
+          <label class="form__input_label" for="name">
+            <input type="text" class="form__input-item" value="" placeholder="Ваше имя" id="name"/>
+          </label>
+          <label class="form__input_label" for="tel">
+            <input type="tel" class="form__input-item" value="" placeholder="+7 (999) 999-99-99" id="tel"/>
+          </label>
+          <button class="form__button">Оставить заявку</button>
+      </div>
+      </section>
+      <section class="video__project">
+  <div id="video-container" class="video__project-item">
+    <img id="video-poster" src="images/Frame570.png" alt="Постер видео">
+    <iframe id="video-iframe" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="video__project-text video__project-text1">
+    <p class="video__project_text-item video__project_text-garant">Гарантия Результата</p>
+    <img src="images/Tilda_Icons_9ta_docs.png" alt="print" class="video__project-img video__project_img-garant">
+  </div>
+  <div class="video__project-text video__project-text2">
+    <p class="video__project_text-control">Свои арбитражные управляющие</p>
+    <img src="images/Tilda_Icons_1ed_hat.png" alt="hat" class="video__project-img video__project_img-control">
+  </div>
+  <div class="video__project-text video__project-text3">
+    <p class="video__project_text-item video__project_text-deadlines">Строгое соблюдение сроков</p>
+    <img src="images/Tilda_Icons_1ed_timer.png" alt="timer" class="video__project-img video__project_img_timer-treaty">
+  </div>
+  <div class="video__project-text video__project-text4">
+    <p class="video__project_text-item video__project_text-experience">Опыт работы более 10 лет</p>
+    <img src="images/Tilda_Icons_21re_treaty.png" alt="treaty" class="video__project-img video__project_img_timer-treaty">
+  </div>
+  <div class="video__project-text video__project-text5">
+    <p class="video__project_text-item video__project_text-best">Лучшие цены на рынке</p>
+    <img src="images/Tilda_Icons_8yo_flame.png" alt="flame" class="video__project-img">
+  </div>
+  <script>
+    var videoPoster = document.getElementById('video-poster');
+    var videoIframe = document.getElementById('video-iframe');
+  
+    videoPoster.addEventListener('click', function() {
+      videoPoster.style.display = 'none';
+      videoIframe.src = 'https://www.youtube.com/embed/RhlQvbvMg-0?autoplay=1';
+      videoIframe.style.display = 'block';
+    });
+  </script>
+      </section> 
+      <section class="project__list">
+        <div class="project__list_title">
+          <p>Отзывы о компании «БанкротПроект»</p>
+        </div>
+        <div class="project__list_rating">
+          <div class="project__list_container-img">
+            <img src="images/5.0.png" alt="rating" class="project__list_rating-img">
+            <img src="images/Frame 572.png" alt="number of ratings" class="project__list_numbers-img">
+          </div>
+          <button class="project__list_button" onclick="window.open('https://yandex.ru/maps/org/rosbankrot/132631023981/?ll=43.943659%2C56.314279&z=14.8')" target="_blank">Отзывы на Яндекс.Справочник</button>
+        </div>
+        <div class="project__slider">
+          <div class="project__list_slides">
+            <input type="radio" name="t" id="t1" checked>
+            <input type="radio" name="t" id="t2">
+            <div class="project__list_review y1">
+              <div class="project__list_review-title">
+                <img src="images/Rectangle 48.png" alt="photo" class="project__list_photo-img">
+                <h2 class="project__list_review_title-item">Галина Ч.</h2>
+              </div>
+              <p class="project__list_review-text">«Хочу выразить признательность кампании "Банкротпроект". Это была моя последняя надежда на тот момент. Набрала кредитов на реабилитацию сына. Брала то в одном банке, то в другом, то рефинансирование. В конце концов мне уже не хватало зарплаты, чтобы платить кредиты и хоть как-то существовать. Обратилась к специалистам Банкротпроект, оформила доверенность и всё. Все остальные документы они собрали сами, передали дело в суд. И вот на днях позвонили, сказали процедура завершена и я могу разблокировать карточки. От себя могу добавить ещё, что люди там работают замечательные, отзывчивые. Спасибо вам огромное.»</p>
+            </div>
+            <div class="project__list_review y2">
+              <div class="project__list_review-title">
+                <img src="images/default_user_image.png" alt="photo" class="project__list_photo-img">
+                <h2 class="project__list_review_title-item">Василий Г.</h2>
+              </div>
+              <p class="project__list_review-text">«Обратилась к специалистам Банкротпроект, оформила доверенность и всё. Все остальные документы они собрали сами, передали дело в суд. И вот на днях позвонили, сказали процедура завершена и я могу разблокировать карточки. От себя могу добавить ещё, что люди там работают замечательные, отзывчивые. Спасибо вам огромное.»</p>
+            </div>
+            <div class="slider__navigation2" id="controls">
+              <label for="t1" class="slider__navigation-bar"></label>
+              <label for="t2" class="slider__navigation-bar"></label>
+            </div>
+          </div>
+        </div>
+        <script>
+          const t1 = document.getElementById('t1');
+          const t2 = document.getElementById('t2');
+          const y1 = document.querySelector('.y1');
+          const y2 = document.querySelector('.y2');
+        
+          t1.addEventListener('click', function () {
+            y1.style.display = 'block';
+            y2.style.display = 'none';
+          });
+        
+          t2.addEventListener('click', function () {
+            y1.style.display = 'none';
+            y2.style.display = 'block';
+          });
+        </script>
+        </div>
+      </section>
+      <section class="clients content-section">
+            <article class="clients__image-block">
+              <img class="clients__image" src="images/ivanov_dmitry.jpg" alt="Иванов Дмитрий Владимирович">
+              <p class="clients__subtitle-name">
+                Иванов Дмитрий Владимирович         
+              </p>
+              <p class="clients__subtitle-profession">
+                Арбитражный Управляющий        
+              </p>
+            </article>
+            <article class="clients__content">
+              <h2 class="clients__content-title">
+                Индивидуальный подход к каждому клиенту
+              </h2>
+              <div class="advantages">
+                <div class="advantages__wrapper">
+                  <img class="advantages__icon" src="images/Tilda_hat.svg" alt="шляпа">
+                  <p class="advantages__subtitle">
+                    Более 30 высококвалифицирован<br>ных юристов, всегда готовых помочь
+                  </p>
+                </div>
+                <div class="advantages__wrapper">
+                  <img class="advantages__icon" src="images/Tilda_location.svg" alt="локация">
+                  <p class="advantages__subtitle">
+                    Ведем процедуры с клиентами от Калининграда до Владивостока
+                  </p>
+                </div>
+              </div>
+              <p class="advantages__text">Наши юристы специализируются на процедуре 
+                банкротства. Над Вашей задачей будут работать люди с большим опытом 
+                удачного решения аналогичных вопросов.
+              </p>
+              <a class="advantages__btn" href="#">Наша команда</a>
+            </article>
+      </section>
+      <section class="debts content-section">
+        <h2 class="debts__title">Как избавиться от долгов?</h2>
+          <div class="debts__list">
+            <div class="debts__item">
+              <div class="debts__circle circle"></div>
+              <div class="debts__circle-small small-circle"></div>
+              <h3 class="debts__subtitle">Оставьте заявку</h3>
+              <p class="debts__text">С Вами свяжется наш юрист, мы обсуждаем вашу ситуацию и оцениваем перспективы дела.</p>
+            </div>
+            <div class="debts__item">
+              <div class="debts__circle_2 circle"></div>
+              <div class="debts__circle-small_2 small-circle"></div>
+              <h3 class="debts__subtitle">Заключаем договор</h3>
+              <p class="debts__text">Заключаем договор на оказание услуг. Подберем удобные для Вас условия оплаты, предоставим рассрочку платежей.</p>
+            </div>
+            <div class="debts__item">
+              <div class="debts__circle_3 circle"></div>
+              <div class="debts__circle-small_3 small-circle"></div>
+              <h3 class="debts__subtitle">Собираем документы для суда</h3>
+              <p class="debts__text">С Вами свяжется наш юрист, мы обсуждаем вашу ситуацию и оцениваем перспективы дела.</p>
+            </div>
+            <div class="debts__item">
+              <div class="debts__circle_4 circle"></div>
+              <div class="debts__circle-small_4 small-circle"></div>
+              <h3 class="debts__subtitle">Представление интересов в суде</h3>
+              <p class="debts__text">Ваше дело будут представлять в суде опытные юристы, имеющие положительную судебную практику по списанию долгов.</p>
+            </div>
+            <div class="debts__item">
+              <div class="debts__circle_5 circle"></div>
+              <div class="debts__circle-small_5 small-circle"></div>
+              <h3 class="debts__subtitle">Юридическое сопровождение</h3>
+              <p class="debts__text">Полное юридическое сопровождение на всех этапах процедуры банкротства</p>
+            </div>
+          </div>
+      </section>
+      <section class="news content-section">
+          <article class="news__title-block">
+              <h2 class="news__title">Новости</h2>
+              <a class="news__btn" href="#">Все новости</a>
+          </article>
+          <article class="news__block">
+            <div class="news__block__active">
+              <img class="new__block__acitve-image" src="images/news-image-left.jpg" alt="заседание суда">
+                <div class="news__block__article">
+                  <h3 class="news__block__active-title">Законопроект о масштабной реформе банкротства внесен в Государственную думу</h3>
+                  <p class="news__block__active-text">Изменениям дали зеленый свет: законопроект о масштабной реформе банкротства внесен в Государственную думу</p>
+                </div>
+            </div>
+            <div class="news__list">
+              <div class="news__list-item">
+                <img class="news__list-item__image" src="images/news-image-right_1.jpg" alt="молоток">
+                  <article class="news__list-text-block">
+                      <h4 class="news__list-item__title">Как и почему гражданам-банкротам не прощают долги</h4>
+                      <p class="news__list-item__text">Персональное банкротство, введенное в России почти шесть лет назад, стремительно набирает популярность.</p>
+                  </article>  
+              </div>
+              <div class="news__list-item">
+                <img class="news__list-item__image" src="images/news-image-right_2.jpg" alt="пустые карманы">
+                  <article class="news__list-text-block">
+                      <h4 class="news__list-item__title">Москвич Цукерберг признан банкротом</h4>
+                      <p class="news__list-item__text">Марк Эллиот Цукерберг, который до смены в 2018 году имени и фамилии был Юрием Шишлянниковым, Арбитражным судом Москвы признан банкротом.</p>
+                  </article>
+              </div>
+            </div>
+          </article>
+      </section>
+      <section class="question__page">
+        <h2 class="question__title">Остались вопросы?</h2>
+        <p class="question__text">
+          Оставьте заявку на бесплатную консультацию!
+        </p>
+        <div class="nav__question-menu">
+          <label class="searsh-form__label">
+            <input
+              type="text"
+              placeholder="Ваше имя"
+              class="search-form-__textfield"
+            />
+          </label>
+          <label class="searsh-form__label">
+            <input
+              type="number"
+              placeholder="+7 (999) 999-99-99"
+              class="search-form-__numberfield"
+            />
+          </label>
+          <button type="button" class="question-button">
+            <img class="img-button" src="./images/Search.svg" alt="лупа" />
+            <span class="text-button">Оставить заявку</span>
+          </button>
+        </div>
+      </section>
+      <section class="about">
+        <ul class="about__menu one">
+          <li><h2 class="about__title">Меню</h2></li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link">Главная</a>
+          </li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link">О компании</a>
+          </li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link">Услуги</a>
+          </li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link">Оплата услуг</a>
+          </li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link">Выигранные дела</a>
+          </li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link">Важно знать</a>
+          </li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link">Контакты</a>
+          </li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link"
+              >Политика<br />
+              конфиденциальности</a
+            >
+          </li>
+        </ul>
+        <ul class="about__menu two">
+          <li><h2 class="about__title">Услуги</h2></li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link">Банкротство физических лиц</a>
+          </li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link"
+              >Стоимость банкротства физического лица</a
+            >
+          </li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link"
+              >Юрист по банкротству физических лиц</a
+            >
+          </li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link">Списать долги</a>
+          </li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link">Банкротство юридических лиц</a>
+          </li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link">Арбитражный управляющий</a>
+          </li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link">Банкротство в Москве</a>
+          </li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link">Города обслуживания</a>
+          </li>
+          <li class="about__menu-nav">
+            <a href="#" class="about__menu-link">Карта сайта</a>
+          </li>
+        </ul>
+        <nav class="navigation">
+          <ul class="about__menu-right">
+            <li class="about__menu-nav-right">
+              <h2 class="title-right">+7 (499) 938-84-48</h2>
+            </li>
+            <li class="about__menu-nav-right">
+              <p class="text-right">Работаем в будни с 9:00 до 19:00</p>
+            </li>
+            <li class="about__menu-nav-right">
+              <h2 class="title-right title-down">info@bankrotproekt.ru</h2>
+            </li>
+            <li class="about__menu-nav-right">
+              <p class="text-right">E-mail для ваших вопросов</p>
+            </li>
+            <li class="about__menu-nav-right">
+              <h3 class="title-right-low title-down">
+                Москва, м. Коломенская,<br />
+                пр-кт Андропова, дом 22, 14 этаж, офис 1407
+              </h3>
+            </li>
+            <li class="about__menu-nav-right">
+              <p class="text-right">
+                Адрес офиса. Приезжайте. Всегда всем рады
+              </p>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+    <footer class="footer">
+      <img class="footer-logo-left" src="./images/logofooter.svg" alt="Банкрот проект" />
+      <ul class="footer__menu">
+        <li class="footer__menu-link">
+          <a class="footer-click" href="#"
+            >© ООО «Банкротпроект» 2015-2022 ОГРН 1207700064010</a
+          >
+        </li>
+        <li class="footer__menu-link">
+          <a class="footer-click" href="#"
+            >Юридическая информация / Политика конфиденциальности и Персональные
+            данные</a
+          >
+        </li>
+      </ul>
+      <ul class="footersocial-list-item">
+        <li class="footersocial-icon">
+          <a class="footersocial-link" href="#0">
+            <img 
+            class="footer_logo" 
+            src="./images/Вотсап.svg" 
+            alt="Логотип вотсап" />
+          </a>
+        </li>
+        <li class="footersocial-icon">
+          <a class="footersocial-link" href="#0">
+            <img
+              class="footer_logo"
+              src="./images/vk.svg"
+              alt="Логотип Вконтакте"
+            />
+          </a>
+        </li>
+        <li class="footersocial-icon">
+          <a class="footersocial-link" href="#0">
+            <img
+              class="footer_logo"
+              src="./images/Слой2.svg"
+              alt="Логотип Инстаграм"
+            />
+          </a>
+        </li>
+        <li class="footersocial-icon">
+          <a class="footersocial-link" href="#0">
+            <img
+              class="footer_logo"
+              src="./images/youtube1.svg"
+              alt="Логотип Ютуб"
+            />
+          </a>
+        </li>
+        <li class="footersocial-icon">
+          <a class="footersocial-link" href="#0">
+            <img
+              class="footer_logo"
+              src="./images/Odnoclassniki.svg"
+              alt="Логотип Одноклассники"
+            />
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="./scripts/main.js"></script>
+  </body>
+  </html>
